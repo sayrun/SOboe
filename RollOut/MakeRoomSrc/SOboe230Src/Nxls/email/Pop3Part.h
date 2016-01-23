@@ -1,0 +1,1 @@
+void CycleCheckThread( void* lpvParam);

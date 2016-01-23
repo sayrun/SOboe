@@ -1,0 +1,502 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// ì˙ñ{åÍ resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+#if defined(APSTUDIO_INVOKED) || defined(_POP3_TOO)
+#if defined(APSTUDIO_INVOKED) || defined(_WINSOCK_2)
+#if defined(APSTUDIO_INVOKED)
+IDD_ABOUT$(_WINSOCK_2,_POP3_TOO) DIALOG DISCARDABLE  0, 0, 159, 83
+#else
+IDD_ABOUT DIALOG DISCARDABLE  0, 0, 159, 83
+#endif
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About email.nxl"
+FONT 9, "ÇlÇr ÇoÉSÉVÉbÉN"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,102,62,50,14
+    RTEXT           "SMTP/POP3 client plug-in for Winsock2",IDC_STATIC,7,7,145,8
+    RTEXT           "Version 2.10",IDC_STATIC,7,21,145,8
+    RTEXT           "Copyright 1998-2002 T.Chiba/Sayoka Brand.",IDC_STATIC,7,
+                    35,145,8
+    RTEXT           "All rights reserved.",IDC_STATIC,7,46,145,8
+END
+#endif
+#else
+#if defined(APSTUDIO_INVOKED) || defined(_WINSOCK_2)
+#if defined(APSTUDIO_INVOKED)
+IDD_ABOUT$(_WINSOCK_2) DIALOG DISCARDABLE  0, 0, 159, 83
+#else
+IDD_ABOUT DIALOG DISCARDABLE  0, 0, 159, 83
+#endif
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About email.nxl"
+FONT 9, "ÇlÇr ÇoÉSÉVÉbÉN"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,102,62,50,14
+    RTEXT           "SMTP client plug-in for Winsock2",IDC_STATIC,7,7,145,8
+    RTEXT           "Version 2.10",IDC_STATIC,7,21,145,8
+    RTEXT           "Copyright 1998-2002 T.Chiba/Sayoka Brand.",IDC_STATIC,7,
+                    35,145,8
+    RTEXT           "All rights reserved.",IDC_STATIC,7,46,145,8
+END
+#endif
+#endif
+
+#if defined(APSTUDIO_INVOKED) || defined(_POP3_TOO)
+#if defined(APSTUDIO_INVOKED) || defined(_WINSOCK_1)
+#if defined(APSTUDIO_INVOKED)
+IDD_ABOUT$(_WINSOCK_1,_POP3_TOO) DIALOG DISCARDABLE  0, 0, 159, 83
+#else
+IDD_ABOUT DIALOG DISCARDABLE  0, 0, 159, 83
+#endif
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About email.nxl"
+FONT 9, "ÇlÇr ÇoÉSÉVÉbÉN"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,102,62,50,14
+    RTEXT           "SMTP/POP3 client plug-in for Winsock1.1",IDC_STATIC,7,7,145,
+                    8
+    RTEXT           "Version 2.10",IDC_STATIC,7,21,145,8
+    RTEXT           "Copyright 1998-2002 T.Chiba/Sayoka Brand.",IDC_STATIC,7,
+                    35,145,8
+    RTEXT           "All rights reserved.",IDC_STATIC,7,46,145,8
+END
+#endif
+#else
+#if defined(APSTUDIO_INVOKED) || defined(_WINSOCK_1)
+#if defined(APSTUDIO_INVOKED)
+IDD_ABOUT$(_WINSOCK_1) DIALOG DISCARDABLE  0, 0, 159, 83
+#else
+IDD_ABOUT DIALOG DISCARDABLE  0, 0, 159, 83
+#endif
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About email.nxl"
+FONT 9, "ÇlÇr ÇoÉSÉVÉbÉN"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,102,62,50,14
+    RTEXT           "SMTP client plug-in for Winsock1.1",IDC_STATIC,7,7,145,
+                    8
+    RTEXT           "Version 2.10",IDC_STATIC,7,21,145,8
+    RTEXT           "Copyright 1998-2002 T.Chiba/Sayoka Brand.",IDC_STATIC,7,
+                    35,145,8
+    RTEXT           "All rights reserved.",IDC_STATIC,7,46,145,8
+END
+#endif
+#endif
+
+IDD_DINPUTDLG DIALOG DISCARDABLE  0, 0, 198, 65
+STYLE DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ëóêMêÊíºê⁄ì¸óÕ"
+FONT 9, "ÇlÇr ÇoÉSÉVÉbÉN"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,86,44,50,14
+    PUSHBUTTON      "∑¨›æŸ",IDCANCEL,141,44,50,14
+    LTEXT           "ëóêMêÊ e-mail ±ƒﬁ⁄Ω :",IDC_STATIC,7,7,78,8
+    EDITTEXT        IDC_EDITDADDRESS,36,19,155,12,ES_AUTOHSCROLL
+END
+
+IDD_SMTPPAGE DIALOG DISCARDABLE  0, 0, 206, 105
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "SMTP"
+FONT 9, "ÇlÇr ÇoÉSÉVÉbÉN"
+BEGIN
+    EDITTEXT        IDC_SMTPADDR,66,7,131,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SMTPPORT,66,24,34,12,ES_AUTOHSCROLL
+    RTEXT           "SMTP ª∞ ﬁ :",IDC_STATIC,7,7,56,8
+    RTEXT           "SMTP Œﬂ∞ƒ :",IDC_STATIC,7,26,56,8
+    CONTROL         "ïKÇ∏é©±ƒﬁ⁄ΩÇ÷Ç‡BCCëóêM",IDC_WITHMYADDRESS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,66,41,133,8
+    CONTROL         "îºäp∂¿∂≈ÇëSäpÉJÉ^ÉJÉiÇ÷é©ìÆïœä∑",IDC_MBBTOMBC,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,66,54,132,8
+    EDITTEXT        IDC_CHARCOUNT,66,82,33,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "é©ìÆâ¸çsÇçsÇ§Åià¯ópÇÕâ¸çsÇµÇ»Ç¢Åj",IDC_FORMATTING,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,66,69,133,8
+    LTEXT           "ï∂éöÇ≈â¸çs",IDC_STATIC,103,83,87,8
+END
+
+#if defined(APSTUDIO_INVOKED) || defined(_POP3_TOO)
+#if defined(APSTUDIO_INVOKED)
+IDD_POPPAGE$(_POP3_TOO) DIALOG DISCARDABLE  0, 0, 203, 121
+#else
+IDD_POPPAGE DIALOG DISCARDABLE  0, 0, 203, 121
+#endif
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "POP3"
+FONT 9, "ÇlÇr ÇoÉSÉVÉbÉN"
+BEGIN
+    EDITTEXT        IDC_POP3ADDR,66,22,131,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_POP3PORT,66,39,34,12,ES_AUTOHSCROLL
+    RTEXT           "POP3 ª∞ ﬁ :",IDC_STATIC,7,24,56,8
+    RTEXT           "POP3 Œﬂ∞ƒ :",IDC_STATIC,7,41,56,8
+    EDITTEXT        IDC_POP3LOGINID,66,55,54,12,ES_AUTOHSCROLL
+    RTEXT           "POP3 €∏ﬁﬁ≤› ID :",IDC_STATIC,7,57,56,8
+    EDITTEXT        IDC_POP3LOGINPW,66,72,54,12,ES_PASSWORD | ES_AUTOHSCROLL
+    RTEXT           "POP3  ﬂΩ‹∞ƒﬁ :",IDC_STATIC,7,74,56,8
+    CONTROL         "APOP",IDC_APOP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    125,72,71,10
+    CONTROL         " ﬂΩ‹∞ƒﬁÇÕç≈èâÇÃéÛêMéûÇ…ì¸óÕ",IDC_NOSAVEPW,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,66,88,109,10
+    EDITTEXT        IDC_POP3INTERVAL,66,102,54,12,ES_AUTOHSCROLL | ES_NUMBER
+    RTEXT           "POP3¡™Ø∏é¸ä˙ :",IDC_STATIC,7,104,56,8
+    CONTROL         "POP3Ç≈éÛêMÇçsÇ§",IDC_POP3,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,7,69,10
+    LTEXT           "ï™ñà",IDC_STATIC,123,104,15,8
+END
+#endif
+
+IDD_PRIVATEPAGE DIALOG DISCARDABLE  0, 0, 205, 103
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Private"
+FONT 9, "ÇlÇr ÇoÉSÉVÉbÉN"
+BEGIN
+    EDITTEXT        IDC_LOCALHOST,66,7,54,12,ES_AUTOHSCROLL
+    RTEXT           "é©ÉzÉXÉgñº :",IDC_STATIC,7,9,56,8
+    EDITTEXT        IDC_MAILADDRESS,66,29,131,12,ES_AUTOHSCROLL
+    RTEXT           "é©ÉAÉhÉåÉX :",IDC_STATIC,7,30,56,8
+    EDITTEXT        IDC_REALNAME,66,45,131,12,ES_AUTOHSCROLL
+    RTEXT           "ñºëO :",IDC_STATIC,7,46,56,8
+    EDITTEXT        IDC_ADDRBOOK,66,63,98,12,ES_AUTOHSCROLL
+    RTEXT           "ÉAÉhÉåÉXí† :",IDC_STATIC,7,64,56,8
+    PUSHBUTTON      "ëIë...",IDC_ADRBOKSEL,165,62,32,14
+    EDITTEXT        IDC_SIGNATUREFILE,66,83,98,12,ES_AUTOHSCROLL
+    RTEXT           "èêñºÃß≤Ÿ",IDC_STATIC,7,83,56,8
+    PUSHBUTTON      "ëIë...",IDC_SIGSEL,165,81,32,14
+END
+
+#if defined(APSTUDIO_INVOKED) || defined(_POP3_TOO)
+#if defined(APSTUDIO_INVOKED)
+IDD_PINPUTDLG$(_POP3_TOO) DIALOG DISCARDABLE  0, 0, 127, 71
+#else
+IDD_PINPUTDLG DIALOG DISCARDABLE  0, 0, 127, 71
+#endif
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "POP3 ﬂΩ‹∞ƒﬁ"
+FONT 9, "ÇlÇr ÇoÉSÉVÉbÉN"
+BEGIN
+    EDITTEXT        IDC_POP3LOGINPW,66,7,54,12,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,70,31,50,14
+    PUSHBUTTON      "∑¨›æŸ",IDCANCEL,70,49,50,14
+    RTEXT           "POP3  ﬂΩ‹∞ƒﬁ :",IDC_STATIC,7,9,56,8
+END
+#endif
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    "IDD_ABOUT$(_WINSOCK_2)", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 152
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 76
+    END
+
+    "IDD_ABOUT$(_WINSOCK_1)", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 152
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 76
+    END
+
+    IDD_DINPUTDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 191
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 58
+    END
+
+    IDD_SMTPPAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 199
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 98
+    END
+
+    "IDD_POPPAGE$(_POP3_TOO)", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 196
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 114
+    END
+
+    IDD_PRIVATEPAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 198
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 96
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_STATUS              BITMAP  DISCARDABLE     "status.bmp"
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+#if defined(APSTUDIO_INVOKED) || defined(_POP3_TOO)
+#if defined(APSTUDIO_INVOKED) || defined(_WINSOCK_2)
+#if defined(APSTUDIO_INVOKED)
+VS_VERSION_INFO$(_WINSOCK_2,_POP3_TOO) VERSIONINFO
+#else
+VS_VERSION_INFO VERSIONINFO
+#endif
+ FILEVERSION 2,1,0,0
+ PRODUCTVERSION 2,1,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041104b0"
+        BEGIN
+            VALUE "Comments", "SMTP/POP3 client pulg-in  for Winsock2\0"
+            VALUE "CompanyName", "Sayoka Brand\0"
+            VALUE "FileDescription", "email\0"
+            VALUE "FileVersion", "2, 1, 0, 0\0"
+            VALUE "InternalName", "email\0"
+            VALUE "LegalCopyright", "Copyright (C) 1998-2002 T.Chiba/Sayoka Brand.\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "email.nxl\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Sayoka Brand email\0"
+            VALUE "ProductVersion", "2, 0, 0, 6\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 1200
+    END
+END
+#endif
+#else
+#if defined(APSTUDIO_INVOKED) || defined(_WINSOCK_2)
+#if defined(APSTUDIO_INVOKED)
+VS_VERSION_INFO$(_WINSOCK_2) VERSIONINFO
+#else
+VS_VERSION_INFO VERSIONINFO
+#endif
+ FILEVERSION 2,1,0,0
+ PRODUCTVERSION 2,1,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041104b0"
+        BEGIN
+            VALUE "Comments", "SMTP client pulg-in  for Winsock2\0"
+            VALUE "CompanyName", "Sayoka Brand\0"
+            VALUE "FileDescription", "email\0"
+            VALUE "FileVersion", "2, 1, 0, 0\0"
+            VALUE "InternalName", "email\0"
+            VALUE "LegalCopyright", "Copyright (C) 1998-2002 T.Chiba/Sayoka Brand.\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "email.nxl\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Sayoka Brand email\0"
+            VALUE "ProductVersion", "2, 1, 0, 0\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 1200
+    END
+END
+#endif
+#endif
+
+#if defined(APSTUDIO_INVOKED) || defined(_POP3_TOO)
+#if defined(APSTUDIO_INVOKED) || defined(_WINSOCK_1)
+#if defined(APSTUDIO_INVOKED)
+VS_VERSION_INFO$(_WINSOCK_1,_POP3_TOO) VERSIONINFO
+#else
+VS_VERSION_INFO VERSIONINFO
+#endif
+ FILEVERSION 2,1,0,0
+ PRODUCTVERSION 2,1,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041104b0"
+        BEGIN
+            VALUE "Comments", "SMTP/POP3 client pulg-in  for Winsock1.1\0"
+            VALUE "CompanyName", "Sayoka Brand\0"
+            VALUE "FileDescription", "email\0"
+            VALUE "FileVersion", "2, 1, 0, 0\0"
+            VALUE "InternalName", "email\0"
+            VALUE "LegalCopyright", "Copyright (C) 1998-2002 T.Chiba/Sayoka Brand.\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "email.nxl\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Sayoka Brand email\0"
+            VALUE "ProductVersion", "2, 1, 0, 0\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 1200
+    END
+END
+#endif
+#else
+#if defined(APSTUDIO_INVOKED) || defined(_WINSOCK_1)
+#if defined(APSTUDIO_INVOKED)
+VS_VERSION_INFO$(_WINSOCK_1) VERSIONINFO
+#else
+VS_VERSION_INFO VERSIONINFO
+#endif
+ FILEVERSION 2,1,0,0
+ PRODUCTVERSION 2,1,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041104b0"
+        BEGIN
+            VALUE "Comments", "SMTP client pulg-in  for Winsock1.1\0"
+            VALUE "CompanyName", "Sayoka Brand\0"
+            VALUE "FileDescription", "email\0"
+            VALUE "FileVersion", "2, 1, 0, 0\0"
+            VALUE "InternalName", "email\0"
+            VALUE "LegalCopyright", "Copyright (C) 1998-2002 T.Chiba/Sayoka Brand.\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "email.nxl\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Sayoka Brand email\0"
+            VALUE "ProductVersion", "2, 1, 0, 0\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 1200
+    END
+END
+#endif
+#endif
+
+#endif    // !_MAC
+
+#endif    // ì˙ñ{åÍ resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

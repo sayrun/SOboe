@@ -1,0 +1,23 @@
+; This file is maintained by HCW. Do not modify this file directly.
+
+[OPTIONS]
+COMPRESS=8 Zeck
+DBCS=Yes
+LCID=0x411 0x0 0x0 ; “ú–{Œê
+REPORT=Yes
+CONTENTS=HELP_MAIN
+TITLE=Broadcasr plug-in
+HLP=StdNet.hlp
+
+[FILES]
+StdNet.rtf
+
+[MAP]
+#include "StdNet.hm"
+HELP_MAIN=1000
+
+[WINDOWS]
+main="",(,,410,350),60672,(r14876671),(r12632256),f2
+
+[CONFIG]
+BrowseButtons()

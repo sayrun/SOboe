@@ -1,0 +1,28 @@
+; This file is maintained by HCW. Do not modify this file directly.
+
+[OPTIONS]
+COMPRESS=8 Zeck
+DBCS=Yes
+NOTES=0
+LCID=0x411 0x0 0x0 ; ì˙ñ{åÍ
+REPORT=No
+CHARSET=128
+CONTENTS=IDH_INDEX
+TITLE=äoÇ¶èë for Windows 95/NT 4.0
+COPYRIGHT=Shin-OboeGaki Copyright (C) 1996-1999 T.Chiba/Sayoka Brand. Help file compiled by Rei S. on %date.
+DEFFONT=ÇlÇr ÇoÉSÉVÉbÉN,9,128
+HLP=..\SOBOE.HLP
+
+[FILES]
+Soboe.rtf
+Usage.rtf
+..\CONTEXT\SOboe.rtf
+History.rtf
+Custom.rtf
+
+[MAP]
+#include ..\CONTEXT\SOboe.hm
+#include Soboehlp.h
+
+[WINDOWS]
+main="",(540,8,480,760),27904,(r14876671),(r12632256),f2

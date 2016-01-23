@@ -1,0 +1,92 @@
+　通信プラグインに関しての関数
+
+この関数を満たせば、ネットワークプロトコルやフォーマットを問わない。つまり、覚え書に対してそう見えれば良いということ。
+そのため、付箋紙98互換やIP Message互換、あるいはSMPT/POP3互換の実装が可能になる。
+
+NetExSpecification
+通信プラグイン情報の取得
+
+NetExAbout
+著作権情報などの表示
+
+NetExConfigure
+設定変更
+
+InitializeNetEx
+DLL対し、ネットワーク機能の開始を通知
+起動時・レジュームからの復帰など
+
+UnInitializeNetEx( void)
+DLL対し、ネットワーク機能の終了を通知
+終了時・レジュームへの移行など
+
+StartEntry
+エントリーの開始
+
+AbsenceEntry
+留守の開始・終了
+
+ExitEntry
+エントリーの終了
+
+LockEntryList( void)
+リスト更新の中断、取得の開始
+
+UnlockEntryList
+リスト更新の再開
+
+GetGroupCuont
+リストで使用するグループ個数
+
+GetGroupData
+グループ情報の取得
+pstEntryがNULLあるいはunSizeが０のとき、エントリ情報のサイズを返す
+
+GetEntryCount
+リストに存在するエントリー個数取得
+
+GetEntryData( int nIndex, ENTRYDATA* pstEntry, UINT unSize)
+エントリ情報の取得
+pstEntryがNULLあるいはunSizeが０のとき、エントリ情報のサイズを返す
+
+// エントリデータ
+#define	_ENTRYSTRUCT_VER100	0x0100
+typedef struct tagENTRYDATA
+{
+	int		nSize;
+	UINT	unStructVersion;
+	UINT	unNxlID;
+	int		nEntryStat;
+	int		nParentGroupCount;
+	int		nOffsetParentGroup;
+	int		nOffsetEntryName;
+}ENTRYDATA;
+
+
+受信の通知は、hWndにRegisterWindowMessage( "SOBOE#MSG!FROM-NET")をPostMessageする
+lParamに、受信データのグローバルハンドル
+このハンドルの破棄は覚え書側で行う
+受信データ構造体は未定
+返信／ネットワーク決議の応答についても懸案
+コールバックの方がよくないか？クリティカルセッション付きのやつにして……
+そっちの設計の方がキレイな気も……Windowsに依存しないdll（へんてこな物言い）になるしねぇ……
+
+が、未だに受信処理に関しては考察中。
+単なるコールバックでは、その中で使用するnewがスレッド側のスタックを使用してしまう問題がある。
+
+コールバックにて対応
+メッセージではなく
+
+
+
+int SendMemoData
+データの送信送信データは、フラットなメモリ
+SendMemoDataは本体とは別のタスクから呼び出されるので、同期処理である必要はない
+なお、ここに渡されたハンドルは、この関数から戻った時点で、本体側で破棄される
+戻り値、
+０＞エラー
+０＝成功
+１＝留守
+
+
+ツリー表示のイメージを選択できる様に対応

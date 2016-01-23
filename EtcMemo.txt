@@ -1,0 +1,11 @@
+データフォーマット
+互換にしたほうがいいか？
+
+レジストリはやめる
+iniファイルで対応。
+ZeroAdministrat用に、default.iniとSOboe.iniを使用
+これは見送り
+
+
+Windows 2000でサポートされるAlphaBlendを実装してみる。
+意外に楽しいかもしんない。

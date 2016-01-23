@@ -1,0 +1,647 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 17, 1\r\n"
+    "#pragma code_page(932)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\SetReg.rc2""  // Microsoft Visual C++ 以外のツールで編集されたリソース\r\n"
+    "#include ""l.jpn\\afxres.rc""          // 標準のコンポーネント\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,0,0,17
+ PRODUCTVERSION 2,0,0,2
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041104b0"
+        BEGIN
+            VALUE "FileDescription", "SetReg DLL"
+            VALUE "FileVersion", "2, 0, 0, 17"
+            VALUE "InternalName", "SetReg"
+            VALUE "LegalCopyright", "Copyright (C) 1998-2003 T.Chiba/Sayoka Brand."
+            VALUE "OriginalFilename", "SetReg.DLL"
+            VALUE "ProductName", "覚え書設定DLL"
+            VALUE "ProductVersion", "2, 0, 0, 2"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_NETWORKPAGE DIALOGEX 0, 0, 211, 215
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "ネットワーク関連"
+FONT 9, "ＭＳ Ｐゴシック", 0, 0, 0x0
+BEGIN
+    RTEXT           "送信時の署名 :",IDC_STATIC,12,37,55,8
+    EDITTEXT        IDC_SIGNATURE,69,35,133,12,ES_AUTOHSCROLL
+    RTEXT           "SUSPENDからの復帰遅延 :",IDC_STATIC,42,61,82,8
+    EDITTEXT        IDC_READYDELAY,129,59,40,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_DELAYSPIN,"msctls_updown32",UDS_WRAP | 
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS,171,58,9,14
+    CONTROL         "ネットワーク機能を使用する",IDC_ENABLENETWORK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,21,17,164,8
+    LISTBOX         IDC_NXLLIST,7,83,131,78,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Nxlｲﾝｽﾄｰﾙ...",IDC_NXLINSTALL,147,83,57,14
+    PUSHBUTTON      "Nxlｱﾝｲﾝｽﾄｰﾙ",IDC_NXLUNINSTALL,147,99,57,14
+    PUSHBUTTON      "Nxl設定...",IDC_NXLCONFIG,147,130,57,14
+    PUSHBUTTON      "Nxl About...",IDC_NXLABOUT,147,147,57,14
+END
+
+IDD_DRAWEXDLL DIALOG  0, 0, 187, 103
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "小片描画拡張編集"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,73,82,50,14
+    PUSHBUTTON      "ｷｬﾝｾﾙ",IDCANCEL,129,82,50,14
+    EDITTEXT        IDC_DRAWEXDLLMENUTEXT,63,7,117,12,ES_AUTOHSCROLL
+    LTEXT           "メニュー文字 : ",IDC_STATIC,7,7,48,8
+    EDITTEXT        IDC_DRAWEXDLLNAME,41,47,139,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "ＤＸＬ 設定 : ",IDC_STATIC,7,32,54,8
+    PUSHBUTTON      "選択...",IDC_DRAWEXDLLSEL,9,47,29,12
+    PUSHBUTTON      "設定...",IDC_DRAWEXDLLCONFIG,106,31,35,12
+    PUSHBUTTON      "About...",IDC_DRAWEXDLLABOUT,145,31,35,12
+END
+
+IDD_CHIPEXDLL DIALOG  0, 0, 187, 103
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "小片機能拡張編集"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,73,82,50,14
+    PUSHBUTTON      "ｷｬﾝｾﾙ",IDCANCEL,129,82,50,14
+    EDITTEXT        IDC_CHIPEXDLLMENUTEXT,63,7,117,12,ES_AUTOHSCROLL
+    LTEXT           "メニュー文字 : ",IDC_STATIC,7,7,48,8
+    EDITTEXT        IDC_CHIPEXDLLNAME,41,47,139,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "ＣＥＬ 設定 : ",IDC_STATIC,7,32,54,8
+    PUSHBUTTON      "選択...",IDC_CHIPEXDLLSEL,9,47,29,12
+    PUSHBUTTON      "設定...",IDC_CHIPEXDLLCONFIG,106,31,35,12
+    PUSHBUTTON      "About...",IDC_CHIPEXDLLABOUT,145,31,35,12
+    CONTROL         "このメニューの上にセパレータを挿入",IDC_CHIPEXSETSEPA,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,67,138,8
+END
+
+IDD_DESIGN DIALOG  0, 0, 211, 215
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "デザイン"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    PUSHBUTTON      "フォント...",IDC_FONT,15,39,39,14
+    PUSHBUTTON      "背景色...",IDC_COLOR,59,39,39,14
+    EDITTEXT        IDC_SAMPLE,14,61,182,49,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN
+    GROUPBOX        " スタイル ",IDC_STATIC,7,7,197,125
+    RTEXT           "アイコン : ",IDC_STATIC,138,43,38,10
+    COMBOBOX        IDC_DESIGNTYPE,16,21,101,106,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "編集時自動でＩＭＥをＯＮ",IDC_IMEAUTO,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,116,157,8
+    GROUPBOX        " データファイル ",IDC_STATIC,7,141,197,67
+    EDITTEXT        IDC_DATAFILE,17,167,147,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "選択...",IDC_DATAFILESEL,164,167,32,12
+    LTEXT           "小片データ保存ファイル :",IDC_STATIC,14,156,96,8
+    LTEXT           "バックアップの世代数 :",IDC_STATIC,14,189,66,8
+    EDITTEXT        IDC_GENERATIONCOUNT,90,188,26,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_GENERATIONCOUNTSPIN,"msctls_updown32",
+                    UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | 
+                    UDS_AUTOBUDDY | UDS_ARROWKEYS,138,191,14,17
+    RADIOBUTTON     "",IDC_ICONSEL,181,40,15,16,BS_BITMAP | BS_CENTER | 
+                    BS_VCENTER | BS_PUSHLIKE | WS_GROUP | WS_TABSTOP
+END
+
+IDD_EXTDLL DIALOG  0, 0, 211, 215
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "拡張ＤＬＬ"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    EDITTEXT        IDC_ARRANGEDLL_PATH,13,40,185,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "選択...",IDC_ARRANGEDLL_SEL,75,59,30,12
+    PUSHBUTTON      "設定...",IDC_ARRANGEDLL_CONFIG,122,59,35,12
+    GROUPBOX        " 整列拡張ＤＬＬ ",IDC_STATIC,7,7,197,74
+    PUSHBUTTON      "About...",IDC_ARRANGEDLL_ABOUT,163,59,35,12
+    GROUPBOX        " 小片機能拡張 ",IDC_STATIC,7,90,98,118
+    LISTBOX         IDC_CHIPEXDLLLIST,13,104,85,80,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "編集...",IDC_CHIPEXDLLEDIT,58,189,40,12
+    PUSHBUTTON      "取り消し",IDC_CHIPEXDLLDELETE,13,189,40,12
+    GROUPBOX        " 小片描画拡張 ",IDC_STATIC,106,90,98,118
+    LISTBOX         IDC_DRAWEXLIST,113,104,85,80,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "編集...",IDC_DRAWEXEDIT,158,189,40,12
+    PUSHBUTTON      "取り消し",IDC_DRAWEXDELETE,113,189,40,12
+    COMBOBOX        IDC_ARRANGEDLL,13,21,93,128,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_CUSTOMEXT DIALOG  0, 0, 211, 215
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "詳細"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    CONTROL         "メニューは階層化しない",IDC_MENUFLAT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,23,21,157,8
+    CONTROL         "起動直後は全ての小片を一時非表示",IDC_HIDESTART,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,23,36,157,8
+    CONTROL         "削除時にログファイルに保存する",IDC_DELLOG,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,23,51,157,8
+    CONTROL         "再編集時「大きさ再計算」をデフォルトでチェック",
+                    IDC_CALCDEFAULT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,23,
+                    66,157,8
+    GROUPBOX        " 基本動作 ",IDC_STATIC,5,7,200,168
+    CONTROL         "非表示は通知後非表示へ",IDC_HIDEBACK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,23,81,157,8
+    CONTROL         "削除時は確認メッセージを表示しない",IDC_NOCHECKDELETE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,23,96,157,8
+    CONTROL         "メニューの「削除」を「保存」に変更",IDC_COMPATIBLEOU,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,23,111,157,8
+    CONTROL         "小片化時に本文前後のオートトリミング",IDC_AUTOTRIMMING,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,23,126,157,8
+    CONTROL         "バージョンの通知は行わない",IDC_VERUNNOTIFY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,23,141,157,8
+    CONTROL         "小片編集後に現状を保存",IDC_MFSAVE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,23,157,157,8
+END
+
+IDD_INTERFACE DIALOG  0, 0, 210, 215
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "キーとマウス"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    CONTROL         "編集",IDC_LREEDIT,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,24,20,65,8
+    CONTROL         "関連ファイル起動",IDC_LEXEC,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,24,33,65,8
+    CONTROL         "アイコン化/復元",IDC_LSMALLBIG,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,24,46,65,8
+    CONTROL         "送信",IDC_LSEND,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,24,72,65,8
+    CONTROL         "タイトル化/復元",IDC_LTITLE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,24,59,65,8
+    CONTROL         "編集",IDC_CREEDIT,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,119,20,65,8
+    CONTROL         "関連ファイル起動",IDC_CEXEC,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,119,33,65,8
+    CONTROL         "アイコン化/復元",IDC_CSMALLBIG,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,119,46,65,8
+    CONTROL         "送信",IDC_CSEND,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,119,72,65,8
+    CONTROL         "タイトル化/復元",IDC_CTITLE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,119,59,65,8
+    CONTROL         "HotKey1",IDC_HOTKEYLIST,"msctls_hotkey32",WS_BORDER | 
+                    WS_TABSTOP,52,131,106,14
+    GROUPBOX        " 左ダブルクリック ",IDC_STATIC,11,7,90,86
+    GROUPBOX        " 中ダブルクリック ",IDC_STATIC,109,7,90,85
+    GROUPBOX        " キーボードによるメニュ呼び出し ",IDC_STATIC,11,118,189,
+                    36
+END
+
+IDD_NETWORKEXT DIALOGEX 0, 0, 211, 215
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "送受信の設定"
+FONT 9, "ＭＳ Ｐゴシック", 0, 0, 0x0
+BEGIN
+    CONTROL         "送信結果をログファイルに保存する",IDC_SENDLOG,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,19,21,157,8
+    CONTROL         "送信した小片の本文も保存",IDC_SENDLOGFULL,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,30,34,157,8
+    GROUPBOX        " 送受信 ",IDC_STATIC,7,7,197,156
+    CONTROL         "「裏返し」をデフォルトでチェック",IDC_SENDPACKDEFAULT,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,20,76,157,8
+    CONTROL         "「表返し確認」をデフォルトでチェック",
+                    IDC_SENDOPENDEFAULT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,30,89,157,8
+    CONTROL         "非Popup通知時、受信した小片は非表示",
+                    IDC_RECEIVECHIPHIDE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,19,181,157,8
+    CONTROL         "非Popup通知時、受信通知非表示",IDC_INFOHIDE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,19,194,157,8
+    GROUPBOX        " 非Popup通知 ",IDC_STATIC,7,168,197,40
+    CONTROL         "受信結果をログファイルに保存する",IDC_RECEIVELOG,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,19,48,157,8
+    CONTROL         "受信した小片の本文も保存",IDC_RECEIVELOGFULL,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,30,61,157,8
+    CONTROL         "送信時「終了時削除」をデフォルトでチェック",
+                    IDC_DELONQUITDEFAULT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,20,104,157,8
+    CONTROL         "受信時に現状を保存",IDC_RCSAVE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,20,132,157,8
+    CONTROL         "送信時元小片を削除",IDC_DELETEAFTERSEND,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,20,147,157,8
+    CONTROL         "受信小片に「終了時削除」をデフォルトで適応",
+                    IDC_DELONQUIT2RCV,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    20,118,157,8
+END
+
+IDD_SECURITY DIALOG  0, 0, 211, 215
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "セキュリティ"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    GROUPBOX        " 親展時のパスワード ",IDC_STATIC,7,7,197,91
+    EDITTEXT        IDC_OLDPASSWORD,90,22,94,12,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_NEWPASSWORD,90,42,94,12,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_CHECKPASSWORD,90,62,94,12,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    RTEXT           "旧パスワード : ",IDC_STATIC,20,25,67,8
+    RTEXT           "新パスワード : ",IDC_STATIC,20,45,67,8
+    RTEXT           "新パスワード確認 : ",IDC_STATIC,20,65,67,8
+    GROUPBOX        " 受信制御 ",IDC_STATIC,7,107,197,73
+    CONTROL         "関連付けを受け入れる",IDC_RECEPTIONLINK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,20,129,82,8
+    CONTROL         "タイマを受け入れる",IDC_RECEPTIONTIMER,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,20,144,82,8
+    CONTROL         "全てのパスワードに適用",IDC_ALLPASSWORD,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,55,81,109,8
+    CONTROL         "描画拡張タイプを受け入れる",IDC_RECEPTIONDXL,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,20,159,124,8
+END
+
+IDD_TEMPLET DIALOG  0, 0, 211, 215
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "テンプレート"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    GROUPBOX        " テンプレート ",IDC_STATIC,7,7,197,201
+    LISTBOX         IDC_TEMPLETLIST,16,39,177,141,LBS_OWNERDRAWFIXED | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "削除",IDC_TEMPLETDEL,154,185,39,15
+    CONTROL         "テンプレートファイルを利用する",IDC_ENABLETEMPLET,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,23,156,8
+    PUSHBUTTON      "▲上へ移動",IDC_UPITEM,16,185,43,15
+    PUSHBUTTON      "▼下へ移動",IDC_DOWNITEM,63,185,43,15
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_NETWORKPAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 204
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 207
+    END
+
+    IDD_DRAWEXDLL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 96
+    END
+
+    IDD_CHIPEXDLL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 96
+    END
+
+    IDD_DESIGN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 204
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 208
+    END
+
+    IDD_EXTDLL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 204
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 208
+    END
+
+    IDD_CUSTOMEXT, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 205
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 208
+    END
+
+    IDD_INTERFACE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 203
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 208
+    END
+
+    IDD_NETWORKEXT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 204
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 208
+    END
+
+    IDD_SECURITY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 204
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 208
+    END
+
+    IDD_TEMPLET, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 204
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 208
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_ICONIMG             BITMAP                  "res\\postit.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DESIGN DLGINIT
+BEGIN
+    IDC_DESIGNTYPE, 0x403, 21, 0
+0x5690, 0x4b8b, 0xec8d, 0xac90, 0x9e8e, 0xcc82, 0x6683, 0x5583, 0x4383, 
+0x9383, "\000" 
+    IDC_DESIGNTYPE, 0x403, 13, 0
+0x968e, 0x4f91, 0xcc82, 0xca92, 0x6d92, 0x4690, "\000" 
+    IDC_DESIGNTYPE, 0x403, 15, 0
+0x6f8c, 0xdf89, 0xe38c, 0xcc82, 0xca92, 0x6d92, 0x4690, "\000" 
+    0
+END
+
+IDD_EXTDLL DLGINIT
+BEGIN
+    IDC_ARRANGEDLL, 0x403, 13, 0
+0xca92, 0xed8f, 0xac8f, 0xd095, 0xae90, 0xf197, "\000" 
+    IDC_ARRANGEDLL, 0x403, 19, 0
+0x5e83, 0x4383, 0x6783, 0x8b83, 0xbb89, 0xac8f, 0xd095, 0xae90, 0xf197, 
+"\000" 
+    IDC_ARRANGEDLL, 0x403, 19, 0
+0x4183, 0x4383, 0x5283, 0x9383, 0xbb89, 0xac8f, 0xd095, 0xae90, 0xf197, 
+"\000" 
+    IDC_ARRANGEDLL, 0x403, 15, 0
+0xf38f, 0xd491, 0xf194, 0xcb88, 0xb691, 0xae90, 0xf197, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_DXLLISTMENU MENU 
+BEGIN
+    POPUP "DXL"
+    BEGIN
+        MENUITEM "編集...",                     IDC_DRAWEXEDIT
+        MENUITEM "取り消し",                    IDC_DRAWEXDELETE
+        MENUITEM SEPARATOR
+        MENUITEM "デフォルト",                  IDM_SETDEFAULTDXL
+        MENUITEM SEPARATOR
+        MENUITEM "上へ移動",                    IDM_UPDRAWEX
+        MENUITEM "下へ移動",                    IDM_DOWNDRAWEX
+    END
+    POPUP "CEL"
+    BEGIN
+        MENUITEM "編集...",                     IDC_CHIPEXDLLEDIT
+        MENUITEM "取り消し",                    IDC_CHIPEXDLLDELETE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_REG_AUTORESIZE      "AutoResize"
+    IDS_REG_AUTOTRIMING     "AutoTriming"
+    IDS_REG_BACKCOLOR       "BackColor"
+    IDS_REG_BEFOREBACKCOLOR "BeforeBackColor"
+    IDS_REG_BEFOREFORECOLOR "BeforeForeColor"
+    IDS_REG_CELMENU         "ChipExLib%dMenu"
+    IDS_REG_CELMENUSEPARATOR "ChipExMenuSeparator"
+    IDS_REG_CELPATH         "ChipExLib%dPath"
+    IDS_REG_CHECKDELONQUIT  "CheckDelOnQuit"
+    IDS_REG_COMPATIBLEOU    "CompatibleOU"
+    IDS_REG_DATALISTFILTER  "DataListFilter"
+    IDS_REG_DATALISTREVERSE "DataListReverse"
+    IDS_REG_DEFAULTNXL      "DefaultNetExLib"
+    IDS_REG_DELLISTFILTER   "DelListFilter"
+    IDS_REG_DELLISTREVERSE  "DelListReverse"
+    IDS_REG_DXLMENU         "DrawExLib%dMenu"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_REG_DXLPATH         "DrawExLib%dPath"
+    IDS_REG_ENABLETEMPLET   "EnableTemplet"
+    IDS_REG_FILEPATH        "FilePath"
+    IDS_REG_FLATMENU        "FlatMenu"
+    IDS_REG_FORECOLOR       "ForeColor"
+    IDS_REG_FULLLOGGINGRECEIVECHIP "FullLoggingReceiveChip"
+    IDS_REG_FULLLOGGINGSENDCHIP "FullLoggingSendChip"
+    IDS_REG_GLOBALPASSWORD  "IMP132"
+    IDS_REG_HIDEBACK        "HIdeback"
+    IDS_REG_HIDERECEIVE     "HideReceive"
+    IDS_REG_HIDESTART       "HideStart"
+    IDS_REG_HOTKEY          "HotKey"
+    IDS_REG_ICONINDEX       "IconIndex"
+    IDS_REG_LDBLCLKFUNC     "LDblClkFunc"
+    IDS_REG_LOGFONT         "LogFont"
+    IDS_REG_LOGGINGDELCHIP  "LoggingDelChip"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_REG_LOGGINGRECEIVECHIP "LoggingReceiveChip"
+    IDS_REG_LOGGINGSENDCHIP "LoggingSendChip"
+    IDS_REG_MDBLCLKFUNC     "MDblClkFunc"
+    IDS_REG_NETWORKENABLE   "NetworkEnable"
+    IDS_REG_NOCHECKDELETE   "NoCheckDelete"
+    IDS_REG_NOTIFIYVERSION  "NotifyVersion"
+    IDS_REG_NOTIFYRECEIVE   "NotifyReceive"
+    IDS_REG_NXLMENU         "NetExLib%dMenu"
+    IDS_REG_NXLPATH         "NetExLib%dPath"
+    IDS_REG_OPENCHECK       "OpenCheck"
+    IDS_REG_PACKSEND        "PackSend"
+    IDS_REG_POPUPRECEIVE    "PopupReceive"
+    IDS_REG_RECEPTIONDXL    "ReceptionDxl"
+    IDS_REG_RECEPTIONLINK   "ReceptionLink"
+    IDS_REG_RECEPTIONTIMER  "ReceptionTimer"
+    IDS_REG_RESUMEDELAY     "ResumeDelay"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_REG_AFTERBACKCOLOR  "AfterBackColor"
+    IDS_REG_AFTERFORECOLOR  "AfterForeColor"
+    IDS_REG_APPENDPOS       "AppendPos"
+    IDS_REG_APPENDSIGNATURE "AppendSignature"
+    IDS_REG_APPENDTIME      "AppendTime"
+    IDS_REG_ARRANGEICONDLL  "ArrangeIcon"
+    IDS_REG_ARRANGENORMALDLL "ArrangeNormal"
+    IDS_REG_AUTOIMEOPEN     "AutoIMEOpen"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_EXSAMPLE            "Example\r\nこれは試験表示"
+    IDS_INVALID             "未定義"
+    IDS_MISMATCHOLDPW       "旧パスワードが一致しません。\nパスワードは変更できません。"
+    IDS_MISSMATCHEXTENDED   "拡張ＤＬＬが仕様を満たしていません。\n処理は中止しました"
+    IDS_MISSMATCHEXTENEDEDVERSION 
+                            "本バージョンの覚え書がバージョンと\n拡張ＤＬＬのバージョンが一致しません。\n\n正しいバージョンの拡張ＤＬＬを入手して下さい。"
+    IDS_NOTEQUPW            "登録用パスワードと確認用パスワードが一致しません。\n再度入力して下さい。"
+    IDS_NOTFOUNDEXTENDEDDLL "拡張ＤＬＬがロードできませんでした。\nパス指定が誤っていないか、確認して下さい。"
+    IDS_PROPSHT_CAPTION     "オプション"
+    IDS_VERYSHORTPW         "設定されたパスワードは短すぎます。\nパスワードは４文字以上でなければなりません。"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_REG_SIGNATURE       "Signature"
+    IDS_REG_TEMPLETFILE     "TempletFile"
+    IDS_REG_USERCOLORS      "UserColors%d"
+    IDS_REG_WAREHOUSEPATH   "WarehousePath"
+    IDS_REG_GENERATIONCOUNT "GenerationCount"
+    IDS_REG_ARRANGETITLEDLL "ArrangeTitle"
+    IDS_REG_ARRANGEALLDLL   "ArrangeAll"
+    IDS_REG_RECEIVEANDSAVE  "ReceiveAndSave"
+    IDS_REG_MODIFYANDSAVE   "ModifyAndSave"
+    IDS_REG_DELETEAFTERSEND "DeleteAfterSend"
+    IDS_REG_DEFAULT         "Default"
+    IDS_REG_MULTIUSER       "MU"
+    IDS_REG_DELONQUIT2RCV   "DelOnQuit2Rcv"
+    IDS_REG_DEFAULTDXLID    "DefaultDrawExLibID"
+END
+
+#endif    // 日本語 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE 17, 1
+#pragma code_page(932)
+#endif //_WIN32
+#include "res\SetReg.rc2"  // Microsoft Visual C++ 以外のツールで編集されたリソース
+#include "l.jpn\afxres.rc"          // 標準のコンポーネント
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

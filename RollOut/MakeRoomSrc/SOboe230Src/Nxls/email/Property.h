@@ -1,0 +1,1 @@
+int eMailProperty( HWND hWnd);

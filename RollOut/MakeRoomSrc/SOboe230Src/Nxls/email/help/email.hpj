@@ -1,0 +1,23 @@
+; This file is maintained by HCW. Do not modify this file directly.
+
+[OPTIONS]
+COMPRESS=8 Zeck
+DBCS=Yes
+LCID=0x411 0x0 0x0 ; 日本語
+REPORT=Yes
+CHARSET=128
+TITLE=SMTPクライアント email.nxl Ver 0.03 for シン覚え書
+HLP=.\email.hlp
+
+[FILES]
+.\email.rtf
+
+[MAP]
+#include "email.hm"
+HELP_MAIN=1000
+
+[WINDOWS]
+main="SMTPクライアント email.nxl for シン覚え書",(,,410,400),60672,(r14876671),(r12632256),f3
+
+[CONFIG]
+BrowseButtons()

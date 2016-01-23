@@ -1,0 +1,118 @@
+// MAKEHELP.BAT が生成したヘルプ マップ ファイル は SetReg.HPJ で使われます。 
+ 
+// コマンド (ID_* and IDM_*) 
+HIDM_UPDRAWEX                           0x10259
+HIDM_DOWNDRAWEX                         0x1025A
+ 
+// プロンプト (IDP_*) 
+ 
+// リソース (IDR_*) 
+HIDR_DXLLISTMENU                        0x20258
+ 
+// ダイアログ (IDD_*) 
+HIDD_CHIPEXDLL                          0x20065
+HIDD_CUSTOMEXT                          0x20066
+HIDD_CUSTOMNETWORK                      0x20067
+HIDD_DESIGN                             0x20068
+HIDD_DRAWEXDLL                          0x20069
+HIDD_EXTDLL                             0x2006A
+HIDD_INTERFACE                          0x2006B
+HIDD_NETWORKEXT                         0x2006C
+HIDD_NETWORKPAGE                        0x2006D
+HIDD_SECURITY                           0x2006E
+HIDD_TEMPLET                            0x2006F
+ 
+// フレーム コントロール (IDW_*) 
+ 
+// コントロール (IDC_*) 
+HIDC_ALLPASSWORD                        0x60190
+HIDC_ARRANGEDLL_ABOUT                   0x60191
+HIDC_ARRANGEDLL_CONFIG                  0x60192
+HIDC_ARRANGEDLL_PATH                    0x60193
+HIDC_ARRANGEDLL_SEL                     0x60194
+HIDC_ARRANGEDLL                         0x60195
+HIDC_AUTOTRIMMING                       0x60199
+HIDC_CALCDEFAULT                        0x6019A
+HIDC_CALCNOMOVE                         0x6019B
+HIDC_CEXEC                              0x6019C
+HIDC_CHECKPASSWORD                      0x6019D
+HIDC_CHIPEXDLLABOUT                     0x6019E
+HIDC_CHIPEXDLLCONFIG                    0x6019F
+HIDC_CHIPEXDLLDELETE                    0x601A0
+HIDC_CHIPEXDLLEDIT                      0x601A1
+HIDC_CHIPEXDLLLIST                      0x601A2
+HIDC_CHIPEXDLLMENUTEXT                  0x601A3
+HIDC_CHIPEXDLLNAME                      0x601A4
+HIDC_CHIPEXDLLSEL                       0x601A5
+HIDC_CHIPEXSETSEPA                      0x601A6
+HIDC_COLOR                              0x601A7
+HIDC_COMPATIBLEOU                       0x601A8
+HIDC_CREEDIT                            0x601A9
+HIDC_CSEND                              0x601AA
+HIDC_CSMALLBIG                          0x601AB
+HIDC_CTITLE                             0x601AC
+HIDC_DATAFILE                           0x601AD
+HIDC_DATAFILESEL                        0x601AE
+HIDC_DELAYSPIN                          0x601AF
+HIDC_DELLOG                             0x601B0
+HIDC_DELONQUITDEFAULT                   0x601B1
+HIDC_DESIGNTYPE                         0x601B2
+HIDC_DOWNITEM                           0x601B3
+HIDC_DRAWEXDELETE                       0x601B4
+HIDC_DRAWEXDLLABOUT                     0x601B5
+HIDC_DRAWEXDLLCONFIG                    0x601B6
+HIDC_DRAWEXDLLMENUTEXT                  0x601B7
+HIDC_DRAWEXDLLNAME                      0x601B8
+HIDC_DRAWEXDLLSEL                       0x601B9
+HIDC_DRAWEXEDIT                         0x601BA
+HIDC_DRAWEXLIST                         0x601BB
+HIDC_DROPINWITHUTL                      0x601BC
+HIDC_DXLOK                              0x601BD
+HIDC_ENABLENETWORK                      0x601BE
+HIDC_ENABLETEMPLET                      0x601BF
+HIDC_FIRSTONCEHIDE                      0x601C0
+HIDC_FONT                               0x601C1
+HIDC_HIDEBACK                           0x601C2
+HIDC_HIDESTART                          0x601C3
+HIDC_HODEBACK                           0x601C4
+HIDC_HOTKEYLIST                         0x601C5
+HIDC_ICONLIST                           0x601C6
+HIDC_IMEAUTO                            0x601C7
+HIDC_INFOHIDE                           0x601C8
+HIDC_LEXEC                              0x601C9
+HIDC_LREEDIT                            0x601CA
+HIDC_LSEND                              0x601CB
+HIDC_LSMALLBIG                          0x601CC
+HIDC_LTITLE                             0x601CD
+HIDC_MENUFLAT                           0x601CE
+HIDC_NEWPASSWORD                        0x601CF
+HIDC_NOCHECKDELETE                      0x601D0
+HIDC_NXLABOUT                           0x601D1
+HIDC_NXLCONFIG                          0x601D2
+HIDC_NXLINSTALL                         0x601D3
+HIDC_NXLLIST                            0x601D4
+HIDC_NXLUNINSTALL                       0x601D5
+HIDC_OLDPASSWORD                        0x601D6
+HIDC_READYDELAY                         0x601D7
+HIDC_RECEIVECHIPHIDE                    0x601D8
+HIDC_RECEIVELOG                         0x601D9
+HIDC_RECEIVELOGFULL                     0x601DA
+HIDC_RECEPTIONDXL                       0x601DB
+HIDC_RECEPTIONLINK                      0x601DC
+HIDC_RECEPTIONTIMER                     0x601DD
+HIDC_SAMPLE                             0x601DE
+HIDC_SENDLOG                            0x601DF
+HIDC_SENDLOGFULL                        0x601E0
+HIDC_SENDOPENDEFAULT                    0x601E1
+HIDC_SENDPACKDEFAULT                    0x601E2
+HIDC_SHELLEXECOK                        0x601E3
+HIDC_SIGNATURE                          0x601E4
+HIDC_TEMPLETDEL                         0x601E5
+HIDC_TEMPLETLIST                        0x601E6
+HIDC_TIMEROK                            0x601E7
+HIDC_UPITEM                             0x601E8
+HIDC_VERUNNOTIFY                        0x601E9
+HIDC_GENERATIONCOUNT                    0x601EA
+HIDC_GENERATIONCOUNTSPIN                0x601EB
+HIDC_MFSAVE                             0x601EC
+HIDC_RCSAVE                             0x601ED

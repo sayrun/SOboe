@@ -1,0 +1,48 @@
+; Mltcstsrch.def : DLL 用のモジュール パラメータ宣言
+
+LIBRARY      "Mltcstsrch"
+DESCRIPTION  'Mltcstsrch NxL'
+
+EXPORTS
+		; 機能確認
+		NetExSpecification
+		; 設定変更用
+		NetExConfigure
+		; Copyright表示用
+		NetExAbout
+		; 初期化
+		InitializeNetEx
+		; 終了
+		UnInitializeNetEx
+		; 状態の確認
+		GetNxlStatus
+		; エントリ開始
+		StartEntry
+		; 留守
+		AbsenceEntry
+		; エントリ終了
+		ExitEntry
+		; エントリリスト更新の中断、取得の開始のため
+		LockEntryList
+		; エントリリスト更新の再開
+		UnlockEntryList
+		; グループ数を取得
+		GetGroupCount
+		; グループ情報を取得
+		GetGroupData
+		; リストに存在するエントリー個数取得
+		GetEntryCount
+		; エントリー情報の取得
+		GetEntryData
+		; エントリ情報の比較
+		CompareEntryData
+		; エントリ情報の表示
+		GetEntryInfo
+		; エントリーの直接取得
+		InputEntry
+		; データ送信
+		SendMemoData
+		; 応答送信
+		SendResultData
+		; 固有エラーメッセージ
+		GetErrorMsg

@@ -1,0 +1,37 @@
+// MAKEHELP.BAT が生成したヘルプ マップ ファイル は email.HPJ で使われます。 
+ 
+// コマンド (ID_* and IDM_*) 
+ 
+// プロンプト (IDP_*) 
+ 
+// リソース (IDR_*) 
+ 
+// ダイアログ (IDD_*) 
+HIDD_ABOUT                              0x20096
+HIDD_MAILCONFIG                         0x20097
+HIDD_SENDSPECIFIC                       0x20098
+HIDD_DINPUTDLG                          0x20099
+
+ 
+// フレーム コントロール (IDW_*) 
+ 
+// コントロール (IDC_*) 
+HIDC_ADDRBOOK                           0x600C8
+HIDC_ADRBOKSEL                          0x600C9
+HIDC_CHARCOUNT                          0x600CA
+HIDC_FORMATTING                         0x600CB
+HIDC_LOCALHOST                          0x600CC
+HIDC_MAILADDRESS                        0x600CD
+HIDC_MBBTOMBC                           0x600CE
+HIDC_POP3ADDR                           0x600CF
+HIDC_POP3LOGINID                        0x600D0
+HIDC_POP3LOGINPW                        0x600D1
+HIDC_POP3PORT                           0x600D2
+HIDC_REALNAME                           0x600D3
+HIDC_SENDSPECIFIC                       0x600D4
+HIDC_SIGNATUREFILE                      0x600D5
+HIDC_SIGSEL                             0x600D6
+HIDC_SMTPADDR                           0x600D7
+HIDC_SMTPPORT                           0x600D8
+HIDC_WITHMYADDRESS                      0x600D9
+HIDC_EDITDADDRESS                       0x600DA

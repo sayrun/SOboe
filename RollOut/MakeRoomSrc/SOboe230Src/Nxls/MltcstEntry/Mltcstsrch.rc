@@ -1,0 +1,303 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+SETTINGDLG DIALOG DISCARDABLE  0, 0, 157, 239
+STYLE DS_MODALFRAME | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "entry sheet"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,218,36,14
+    PUSHBUTTON      "CANCEL",IDCANCEL,48,218,36,14
+    EDITTEXT        IDC_MCSTADDR,65,22,77,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MCSTIF,65,38,77,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MCSTPORT,65,56,77,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_NICKNAME,65,123,77,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_GROUP,65,143,77,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MCSTTTL,65,74,77,12,ES_AUTOHSCROLL | ES_NUMBER
+    RTEXT           "join address :",IDC_STATIC,16,24,46,8
+    RTEXT           "I/F address :",IDC_STATIC,16,40,46,8
+    RTEXT           "port :",IDC_STATIC,16,58,46,8
+    RTEXT           "TTL :",IDC_STATIC,16,76,46,8
+    RTEXT           "nickname :",IDC_STATIC,16,125,46,8
+    RTEXT           "group :",IDC_STATIC,16,145,46,8
+    GROUPBOX        " multicast ",IDC_STATIC,7,7,143,91
+    GROUPBOX        "alias",IDC_STATIC,7,105,143,100
+    PUSHBUTTON      "Help",IDC_OPENHELP,114,218,36,14
+    RTEXT           "node list :",IDC_STATIC,16,165,46,8
+    COMBOBOX        IDC_SEEDTYPE,65,163,77,72,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_NODELISTPATH,41,185,101,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "sel...",IDC_NODELISTSEL,16,185,25,12
+END
+
+#if defined(APSTUDIO_INVOKED) || defined(_WINSOCK_2)
+#if defined(APSTUDIO_INVOKED)
+ABOUT$(_WINSOCK_2) DIALOG DISCARDABLE  0, 0, 167, 83
+#else
+ABOUT DIALOG DISCARDABLE  0, 0, 167, 83
+#endif
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,110,62,50,14
+    RTEXT           "Multicast search plug-in for Winsock2",IDC_STATIC,7,7,
+                    153,8
+    RTEXT           "Version 1.06",IDC_STATIC,7,21,153,8
+    RTEXT           "Copyright (C) 1998-2000 T.Chiba/Sayoka Brand.",
+                    IDC_STATIC,7,35,153,8
+    RTEXT           "All rights reserved.",IDC_STATIC,7,46,153,8
+END
+#endif
+
+DINPUTDLG DIALOG DISCARDABLE  0, 0, 127, 61
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "直接入力"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,35,40,40,14
+    PUSHBUTTON      "ｷｬﾝｾﾙ",IDCANCEL,80,40,40,14
+    LTEXT           "送信先のIPアドレス",IDC_STATIC,7,7,114,8
+    EDITTEXT        IDC_EDITIPADD,23,19,97,12,ES_AUTOHSCROLL
+END
+
+#if defined(APSTUDIO_INVOKED) || defined(_WINSOCK_1)
+#if defined(APSTUDIO_INVOKED)
+ABOUT$(_WINSOCK_1) DIALOG DISCARDABLE  0, 0, 167, 83
+#else
+ABOUT DIALOG DISCARDABLE  0, 0, 167, 83
+#endif
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,110,62,50,14
+    RTEXT           "Multicast search plug-in for Winsock1.1",IDC_STATIC,7,7,
+                    153,8
+    RTEXT           "Version 1.06",IDC_STATIC,7,21,153,8
+    RTEXT           "Copyright (C) 1998-2000 T.Chiba/Sayoka Brand.",
+                    IDC_STATIC,7,35,153,8
+    RTEXT           "All rights reserved.",IDC_STATIC,7,46,153,8
+END
+#endif
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    "SETTINGDLG", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 150
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 232
+    END
+
+    "ABOUT$(_WINSOCK_2)", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 160
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 76
+    END
+
+    "DINPUTDLG", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 120
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 54
+    END
+
+    "ABOUT$(_WINSOCK_1)", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 160
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 76
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+#if defined(APSTUDIO_INVOKED) || defined(_WINSOCK_1)
+#if defined(APSTUDIO_INVOKED)
+VS_VERSION_INFO$(_WINSOCK_1) VERSIONINFO
+#else
+VS_VERSION_INFO VERSIONINFO
+#endif
+ FILEVERSION 1,0,0,10
+ PRODUCTVERSION 1,0,0,7
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041104b0"
+        BEGIN
+            VALUE "Comments", "multicast search plug-in for Winsock1.1\0"
+            VALUE "CompanyName", "Sayoka Brand\0"
+            VALUE "FileDescription", "Mltcstsrch\0"
+            VALUE "FileVersion", "1, 0, 0, 10\0"
+            VALUE "InternalName", "Mltcstsrch\0"
+            VALUE "LegalCopyright", "Copyright (C) 1998-2000 T.Chiba/Sayoka Brand.\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Mltcstsrch.nxl\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Mltcstsrch\0"
+            VALUE "ProductVersion", "1, 0, 0, 7\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 1200
+    END
+END
+#endif
+
+#if defined(APSTUDIO_INVOKED) || defined(_WINSOCK_2)
+#if defined(APSTUDIO_INVOKED)
+VS_VERSION_INFO$(_WINSOCK_2) VERSIONINFO
+#else
+VS_VERSION_INFO VERSIONINFO
+#endif
+ FILEVERSION 1,0,0,10
+ PRODUCTVERSION 1,0,0,7
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041104b0"
+        BEGIN
+            VALUE "Comments", "multicast search plug-in for Winsock2\0"
+            VALUE "CompanyName", "Sayoka Brand\0"
+            VALUE "FileDescription", "Mltcstsrch\0"
+            VALUE "FileVersion", "1, 0, 0, 10\0"
+            VALUE "InternalName", "Mltcstsrch\0"
+            VALUE "LegalCopyright", "Copyright (C) 1998-2000 T.Chiba/Sayoka Brand.\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Mltcstsrch.nxl\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Mltcstsrch\0"
+            VALUE "ProductVersion", "1, 0, 0, 7\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 1200
+    END
+END
+#endif
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_NA_MCSTADDR         "マルチキャストアドレスが無効な値です。"
+    IDS_NA_MCSTIF           "使用するインターフェイスカードのアドレスが無効な値です。\nデフォルトを使用する場合は 0.0.0.0 を設定してください。"
+    IDS_NA_MCSTPORT         "ポート番号が無効な値です。"
+    IDS_NA_MCSTTTL          "マルチキャストで使用するTTLが無効な値です。"
+    IDS_NA_NICKNAME         "エントリ名が未入力です。"
+    IDS_ILLEGAL_MCSTADDR    "入力されたアドレスはマルチキャストのアドレスとして使用できません。\nマルチキャストのアドレスは 224.0.0.0-239.255.255.255 の範囲です。"
+END
+
+#endif    // 日本語 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
