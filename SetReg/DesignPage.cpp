@@ -141,9 +141,9 @@ BOOL CDesignPage::OnInitDialog()
 			cMemDC.SelectObject( &m_cBmpIcon);
 			pcIconImgs->Draw( m_nIconIndex, cMemDC.GetSafeHdc(), CRect( 0, 0, _ICON_WIDTH, _ICON_HEIGHT));
 
-			m_cBtnIconSel.SetBitmap( m_cBmpIcon);
-
 			cMemDC.DeleteDC();
+
+			m_cBtnIconSel.SetBitmap( m_cBmpIcon);
 		}
 		m_cBtnIconSel.ReleaseDC( pcDC);
 	}
