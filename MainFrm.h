@@ -200,6 +200,7 @@ protected:
 	afx_msg void OnCustom();
 	afx_msg void OnUpdateCustom(CCmdUI* pCmdUI);
 	afx_msg BOOL OnQueryEndSession();
+	afx_msg void OnEndSession(BOOL bEnding);
 	afx_msg void OnAbsence();
 	afx_msg void OnUpdateAbsence(CCmdUI* pCmdUI);
 	afx_msg void OnHelp();
