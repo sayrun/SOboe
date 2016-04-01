@@ -121,6 +121,7 @@
       <SubSystem>Windows</SubSystem>
       <ImportLibrary>.\Release/SetReg.lib</ImportLibrary>
       <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>No</GenerateDebugInformation>
     </Link>
     <Midl>
       <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
