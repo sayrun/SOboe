@@ -74,6 +74,7 @@ BEGIN_MESSAGE_MAP(CMainFrame, CFrameWnd)
 	ON_COMMAND(IDM_CUSTOM, OnCustom)
 	ON_UPDATE_COMMAND_UI(IDM_CUSTOM, OnUpdateCustom)
 	ON_WM_QUERYENDSESSION()
+	ON_WM_ENDSESSION()
 	ON_COMMAND(IDM_ABSENCE, OnAbsence)
 	ON_UPDATE_COMMAND_UI(IDM_ABSENCE, OnUpdateAbsence)
 	ON_COMMAND(IDM_HELP, OnHelp)
@@ -3470,6 +3471,14 @@ void CMainFrame::OnSendTempletMenu( UINT nID)
 	}
 }
 
+void CMainFrame::OnEndSession(BOOL bEnding)
+{
+	if (bEnding)
+	{
+		QuitProcess();
+	}
+}
+
 BOOL CMainFrame::OnQueryEndSession() 
 {
 	if (!CFrameWnd::OnQueryEndSession())
@@ -3522,10 +3531,6 @@ BOOL CMainFrame::OnQueryEndSession()
 			}
 		}
 		cSglk.Unlock();
-	}
-	if( blResult)
-	{
-		QuitProcess();
 	}
 
 	return blResult;
